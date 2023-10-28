@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "./components/Button";
- 
+import { passportInstance } from "./baseConfig.js";
 function App() {
  const [display, setDisplay] = useState("0");
  const [equation, setEquation] = useState()
@@ -40,8 +40,21 @@ function App() {
      </div>
     </div>
    </div>
+   {/* <button id="connect-button" onclick="connectPassport()">Connect Passport
+   connectPassport(){
+    
+   }
+   </button> */}
+
+   <button 
+   onClick= { async () => { 
+    console.log("Hottie isn't too hot")
+   }}
+    >Login
+   
+   </button>
   </div>
  );
 }
- 
 export default App;
+// export default passportInstance;
